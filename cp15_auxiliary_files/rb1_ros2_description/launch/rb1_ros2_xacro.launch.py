@@ -54,8 +54,6 @@ def generate_launch_description():
 
     robot_name_1 = "rb1_robot"
 
-    robot_description = {"robot_description": ParameterValue(Command(['xacro ', robot_desc_path, ' robot_name:=', robot_name_1]), value_type=str)}
-
     rsp_robot1 = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
